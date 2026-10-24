@@ -2,7 +2,7 @@
 
 | File | Content |
 |---|---|
-| `contexts.json.gz` | 340 requests sampled from the RQ2 workload (10 per serving week, seed 2027). Each entry holds the retrieved data shown to the model (`view`), the mapping from item and seller aliases to Olist ids, and the request context. The LLM calls cover the first five requests of each week (170 requests, `llm_verbaliser.evaluated_subset`). Rebuilt by `python3 llm_verbaliser.py contexts`. |
+| `contexts.json.gz` | 340 requests sampled (10 per serving week, seed 2027) from a workload that the RQ2 simulator generates with the same seed but with value, mix-up and unregistered-claim faults disabled (assembly faults kept at 1%), so the requests differ from RQ2's. Each entry holds the retrieved data shown to the model (`view`), the mapping from item and seller aliases to Olist ids, and the request context. The LLM calls cover the first five requests of each week (170 requests, `llm_verbaliser.evaluated_subset`). Rebuilt by `python3 llm_verbaliser.py contexts`. |
 | `generations/llm_generations.jsonl.gz` | One line per call: `config`, `req` (snapshot id), `model`, `variant`, `temperature`, raw model output `text`, token `usage`, `finish_reason`, wall-clock `seconds` (including gateway queueing), `date`. |
 
 Prompts: `llm_verbaliser.SYSTEM` (variants `plain` and `careful`) followed by `FORMAT`. The
@@ -12,6 +12,10 @@ response format, through an OpenAI-compatible chat-completions endpoint, in Octo
 Models: `deepseek-flash`, `gpt-6-sol`, `glm-5.3`. Calls that failed (timeouts, and a temporary
 provider outage of the GLM models) were re-sent until all 1,020 calls (3 models x 2 prompts x 170
 requests) had returned; the file holds exactly one successful response per call.
+
+`../llm_run.py <model> <variant>` issues the calls with exactly these parameters against any
+OpenAI-compatible endpoint (`LLM_BASE_URL`, `LLM_API_KEY`); the shipped outputs were produced with an
+equivalent JavaScript client.
 
 Re-evaluate the shipped generations (no model access needed):
 

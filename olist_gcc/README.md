@@ -20,6 +20,7 @@ sellers, timestamped order items, reviews and customer locations).
 | `llm_verbaliser.py` | RQ5: builds the retrieved-data contexts shown to the LLMs, the two prompts, and maps the models' structured claims onto benchmark claims; text-number audit |
 | `llm_eval.py` | RQ5: judges the LLM claims with the labeler, gate, baselines and ablations |
 | `make_llm_numbers.py` | RQ5: LaTeX macros and rows of Table 5 |
+| `llm_run.py` | RQ5: issues the LLM calls with the shipped parameters against any OpenAI-compatible endpoint |
 | `llm/` | RQ5 inputs and raw model outputs (see `llm/README.md`) |
 
 ## Contract
