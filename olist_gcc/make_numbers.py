@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import csv
 import json
+import math
 import os
 import statistics
 import sys
@@ -90,6 +91,9 @@ mac["SweepVerifMax"] = f"{max(max(mean(k, h, 'hard_violation_pct') for h in hs) 
 mac["SweepMaxGCC"] = f"{max(max(x['hard_violation_pct'] for x in agg['GCC'][h]) for h in hs):.1f}"
 mac["SweepDisagree"] = str(sum(r["gcc_oracle_disagreements"] for r in sweep))
 mac["SweepRuns"] = str(len(sweep))
+_spans = [max(x["hard_violation_pct"] for x in agg[k][h]) - min(x["hard_violation_pct"] for x in agg[k][h])
+          for k in ("B0 no gate", "B2 post-hoc verifier (oracle)", "B3 freshness-aware RAG verifier", "GCC") for h in hs]
+mac["SweepRangeMax"] = f"{math.ceil(max(_spans) * 10 - 1e-9) / 10:.1f}"  # widest min-max range over seeds, rounded up
 
 # overhead
 rows = ov["rows"]
@@ -113,7 +117,7 @@ with open(os.path.join(P, "numbers.tex"), "w") as fh:
 NAMES = [("B0 no gate", "B0 no gate"), ("B1 table validation", "B1 table valid."),
          ("B2 post-hoc verifier (oracle)", "B2 oracle verif."), ("B3 freshness-aware RAG verifier", "B3 fresh.\\ RAG verif."), ("B4 B3 + field allowlist", "B4 B3 + allowlist"),
          ("GCC", "\\textbf{GCC}"), ("GCC - caliber", "\\quad$-$ caliber"), ("GCC - grain", "\\quad$-$ grain"),
-         ("GCC - policy", "\\quad$-$ policy"), ("GCC - lineage", "\\quad$-$ lineage")]
+         ("GCC - policy", "\\quad$-$ policy"), ("GCC - lineage", "\\quad$-$ assembly")]
 with open(os.path.join(P, "tab_main_rows.tex"), "w") as fh:
     for key, label in NAMES:
         v = m[key]
