@@ -1,0 +1,2558 @@
+{
+  "requests": 170,
+  "items": 850,
+  "configs": {
+    "deepseek-flash__careful": {
+      "model": "deepseek-flash",
+      "variant": "careful",
+      "parse": {
+        "responses_ok": 170
+      },
+      "claims": 5304,
+      "claims_per_item": 6.24,
+      "fields": {
+        "price_offer": 825,
+        "ships_from": 855,
+        "weight": 713,
+        "dims": 666,
+        "rating": 835,
+        "rank_reason": 819,
+        "local_popularity": 266,
+        "category": 209,
+        "avail_local": 71,
+        "marketing_claim": 31,
+        "price_product": 14
+      },
+      "licensed_distribution": {
+        "surface": 1650,
+        "caveat": 2446,
+        "degrade": 816,
+        "refuse": 392
+      },
+      "cause_distribution": {
+        "ok": 1650,
+        "needs_caveat": 2446,
+        "internal": 816,
+        "G4": 266,
+        "G2": 64,
+        "G1": 31,
+        "G5": 31
+      },
+      "by_field": {
+        "category": {
+          "claims": 209,
+          "licensed": {
+            "caveat": 205,
+            "refuse": 4
+          },
+          "cause": {
+            "needs_caveat": 205,
+            "G5": 4
+          }
+        },
+        "price_offer": {
+          "claims": 825,
+          "licensed": {
+            "surface": 759,
+            "refuse": 66
+          },
+          "cause": {
+            "ok": 759,
+            "G2": 63,
+            "G5": 3
+          }
+        },
+        "price_product": {
+          "claims": 14,
+          "licensed": {
+            "surface": 14
+          },
+          "cause": {
+            "ok": 14
+          }
+        },
+        "ships_from": {
+          "claims": 855,
+          "licensed": {
+            "caveat": 851,
+            "refuse": 4
+          },
+          "cause": {
+            "needs_caveat": 851,
+            "G5": 4
+          }
+        },
+        "avail_local": {
+          "claims": 71,
+          "licensed": {
+            "surface": 70,
+            "refuse": 1
+          },
+          "cause": {
+            "ok": 70,
+            "G2": 1
+          }
+        },
+        "weight": {
+          "claims": 713,
+          "licensed": {
+            "caveat": 707,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 707,
+            "G5": 6
+          }
+        },
+        "dims": {
+          "claims": 666,
+          "licensed": {
+            "caveat": 661,
+            "refuse": 5
+          },
+          "cause": {
+            "needs_caveat": 661,
+            "G5": 5
+          }
+        },
+        "rating": {
+          "claims": 835,
+          "licensed": {
+            "surface": 807,
+            "caveat": 22,
+            "refuse": 6
+          },
+          "cause": {
+            "ok": 807,
+            "needs_caveat": 22,
+            "G5": 6
+          }
+        },
+        "local_popularity": {
+          "claims": 266,
+          "licensed": {
+            "refuse": 266
+          },
+          "cause": {
+            "G4": 266
+          }
+        },
+        "rank_reason": {
+          "claims": 819,
+          "licensed": {
+            "degrade": 816,
+            "refuse": 3
+          },
+          "cause": {
+            "internal": 816,
+            "G5": 3
+          }
+        },
+        "marketing_claim": {
+          "claims": 31,
+          "licensed": {
+            "refuse": 31
+          },
+          "cause": {
+            "G1": 31
+          }
+        }
+      },
+      "gcc_oracle_disagreements": 0,
+      "text_numbers": 6124,
+      "text_numbers_in_claims": 6123,
+      "text_number_coverage_pct": 99.98,
+      "prompt_tokens": 268389,
+      "completion_tokens": 603972,
+      "median_seconds": 218.1,
+      "methods": {
+        "B0 no gate": {
+          "claims": 5304,
+          "surfaced": 5304,
+          "unlicensed_surfaced": 3654,
+          "unlicensed_surfaced_pct": 68.89,
+          "hard_violations": 1208,
+          "hard_violation_pct": 22.78,
+          "missing_caveat": 2446,
+          "missing_caveat_pct": 46.12,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 816,
+            "G1": 31,
+            "G2": 64,
+            "G3": 0,
+            "G4": 266,
+            "G5": 31,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 31.11,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3654,
+          "downgrades": 0,
+          "exact_agreement_pct": 31.11
+        },
+        "B1 table validation": {
+          "claims": 5304,
+          "surfaced": 5304,
+          "unlicensed_surfaced": 3654,
+          "unlicensed_surfaced_pct": 68.89,
+          "hard_violations": 1208,
+          "hard_violation_pct": 22.78,
+          "missing_caveat": 2446,
+          "missing_caveat_pct": 46.12,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 816,
+            "G1": 31,
+            "G2": 64,
+            "G3": 0,
+            "G4": 266,
+            "G5": 31,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 31.11,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3654,
+          "downgrades": 0,
+          "exact_agreement_pct": 31.11
+        },
+        "B2 post-hoc verifier (oracle)": {
+          "claims": 5304,
+          "surfaced": 5273,
+          "unlicensed_surfaced": 3623,
+          "unlicensed_surfaced_pct": 68.31,
+          "hard_violations": 1177,
+          "hard_violation_pct": 22.19,
+          "missing_caveat": 2446,
+          "missing_caveat_pct": 46.12,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 816,
+            "G1": 0,
+            "G2": 64,
+            "G3": 0,
+            "G4": 266,
+            "G5": 31,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 31.29,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3623,
+          "downgrades": 0,
+          "exact_agreement_pct": 31.69
+        },
+        "B3 freshness-aware RAG verifier": {
+          "claims": 5304,
+          "surfaced": 5206,
+          "unlicensed_surfaced": 3556,
+          "unlicensed_surfaced_pct": 67.04,
+          "hard_violations": 1110,
+          "hard_violation_pct": 20.93,
+          "missing_caveat": 2446,
+          "missing_caveat_pct": 46.12,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 816,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 266,
+            "G5": 28,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 31.69,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3556,
+          "downgrades": 0,
+          "exact_agreement_pct": 32.96
+        },
+        "B4 B3 + field allowlist": {
+          "claims": 5304,
+          "surfaced": 4121,
+          "unlicensed_surfaced": 2471,
+          "unlicensed_surfaced_pct": 46.59,
+          "hard_violations": 25,
+          "hard_violation_pct": 0.47,
+          "missing_caveat": 2446,
+          "missing_caveat_pct": 46.12,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 25,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 40.04,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 2471,
+          "downgrades": 816,
+          "exact_agreement_pct": 38.03
+        },
+        "GCC": {
+          "claims": 5304,
+          "surfaced": 1650,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - caliber": {
+          "claims": 5304,
+          "surfaced": 1713,
+          "unlicensed_surfaced": 64,
+          "unlicensed_surfaced_pct": 1.21,
+          "hard_violations": 64,
+          "hard_violation_pct": 1.21,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 64,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 96.26,
+          "safe_retention_pct": 99.98,
+          "licensed_surface_recall_pct": 99.94,
+          "upgrades": 64,
+          "downgrades": 1,
+          "exact_agreement_pct": 98.77
+        },
+        "GCC - grain": {
+          "claims": 5304,
+          "surfaced": 1650,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - policy": {
+          "claims": 5304,
+          "surfaced": 2732,
+          "unlicensed_surfaced": 1082,
+          "unlicensed_surfaced_pct": 20.4,
+          "hard_violations": 1082,
+          "hard_violation_pct": 20.4,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 816,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 266,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 60.4,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 1082,
+          "downgrades": 0,
+          "exact_agreement_pct": 79.6
+        },
+        "GCC - lineage": {
+          "claims": 5304,
+          "surfaced": 1650,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 28,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.47
+        }
+      }
+    },
+    "deepseek-flash__plain": {
+      "model": "deepseek-flash",
+      "variant": "plain",
+      "parse": {
+        "responses_ok": 170
+      },
+      "claims": 5998,
+      "claims_per_item": 7.06,
+      "fields": {
+        "price_offer": 806,
+        "ships_from": 860,
+        "rating": 846,
+        "rank_reason": 850,
+        "local_popularity": 366,
+        "weight": 828,
+        "dims": 819,
+        "price_product": 55,
+        "avail_local": 205,
+        "category": 348,
+        "marketing_claim": 15
+      },
+      "licensed_distribution": {
+        "surface": 1783,
+        "caveat": 2861,
+        "degrade": 844,
+        "refuse": 510
+      },
+      "cause_distribution": {
+        "ok": 1783,
+        "needs_caveat": 2861,
+        "internal": 844,
+        "G4": 365,
+        "G2": 78,
+        "G5": 39,
+        "G1": 15,
+        "VAL": 10,
+        "G3": 3
+      },
+      "by_field": {
+        "category": {
+          "claims": 348,
+          "licensed": {
+            "caveat": 347,
+            "refuse": 1
+          },
+          "cause": {
+            "needs_caveat": 347,
+            "G5": 1
+          }
+        },
+        "price_offer": {
+          "claims": 806,
+          "licensed": {
+            "surface": 713,
+            "refuse": 93
+          },
+          "cause": {
+            "ok": 713,
+            "G2": 77,
+            "G5": 6,
+            "VAL": 10
+          }
+        },
+        "price_product": {
+          "claims": 55,
+          "licensed": {
+            "surface": 52,
+            "refuse": 3
+          },
+          "cause": {
+            "ok": 52,
+            "G3": 3
+          }
+        },
+        "ships_from": {
+          "claims": 860,
+          "licensed": {
+            "caveat": 854,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 854,
+            "G5": 6
+          }
+        },
+        "avail_local": {
+          "claims": 205,
+          "licensed": {
+            "surface": 203,
+            "refuse": 2
+          },
+          "cause": {
+            "ok": 203,
+            "G5": 1,
+            "G2": 1
+          }
+        },
+        "weight": {
+          "claims": 828,
+          "licensed": {
+            "caveat": 822,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 822,
+            "G5": 6
+          }
+        },
+        "dims": {
+          "claims": 819,
+          "licensed": {
+            "caveat": 813,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 813,
+            "G5": 6
+          }
+        },
+        "rating": {
+          "claims": 846,
+          "licensed": {
+            "surface": 815,
+            "caveat": 25,
+            "refuse": 6
+          },
+          "cause": {
+            "ok": 815,
+            "needs_caveat": 25,
+            "G5": 6
+          }
+        },
+        "local_popularity": {
+          "claims": 366,
+          "licensed": {
+            "refuse": 366
+          },
+          "cause": {
+            "G4": 365,
+            "G5": 1
+          }
+        },
+        "rank_reason": {
+          "claims": 850,
+          "licensed": {
+            "degrade": 844,
+            "refuse": 6
+          },
+          "cause": {
+            "internal": 844,
+            "G5": 6
+          }
+        },
+        "marketing_claim": {
+          "claims": 15,
+          "licensed": {
+            "refuse": 15
+          },
+          "cause": {
+            "G1": 15
+          }
+        }
+      },
+      "gcc_oracle_disagreements": 0,
+      "text_numbers": 6545,
+      "text_numbers_in_claims": 6544,
+      "text_number_coverage_pct": 99.98,
+      "prompt_tokens": 260739,
+      "completion_tokens": 572523,
+      "median_seconds": 200.3,
+      "methods": {
+        "B0 no gate": {
+          "claims": 5998,
+          "surfaced": 5998,
+          "unlicensed_surfaced": 4215,
+          "unlicensed_surfaced_pct": 70.27,
+          "hard_violations": 1354,
+          "hard_violation_pct": 22.57,
+          "missing_caveat": 2861,
+          "missing_caveat_pct": 47.7,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 15,
+            "G2": 78,
+            "G3": 3,
+            "G4": 365,
+            "G5": 39,
+            "VAL": 10
+          },
+          "precision_of_surfaced_pct": 29.73,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4215,
+          "downgrades": 0,
+          "exact_agreement_pct": 29.73
+        },
+        "B1 table validation": {
+          "claims": 5998,
+          "surfaced": 5998,
+          "unlicensed_surfaced": 4215,
+          "unlicensed_surfaced_pct": 70.27,
+          "hard_violations": 1354,
+          "hard_violation_pct": 22.57,
+          "missing_caveat": 2861,
+          "missing_caveat_pct": 47.7,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 15,
+            "G2": 78,
+            "G3": 3,
+            "G4": 365,
+            "G5": 39,
+            "VAL": 10
+          },
+          "precision_of_surfaced_pct": 29.73,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4215,
+          "downgrades": 0,
+          "exact_agreement_pct": 29.73
+        },
+        "B2 post-hoc verifier (oracle)": {
+          "claims": 5998,
+          "surfaced": 5983,
+          "unlicensed_surfaced": 4200,
+          "unlicensed_surfaced_pct": 70.02,
+          "hard_violations": 1339,
+          "hard_violation_pct": 22.32,
+          "missing_caveat": 2861,
+          "missing_caveat_pct": 47.7,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 0,
+            "G2": 78,
+            "G3": 3,
+            "G4": 365,
+            "G5": 39,
+            "VAL": 10
+          },
+          "precision_of_surfaced_pct": 29.8,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4200,
+          "downgrades": 0,
+          "exact_agreement_pct": 29.98
+        },
+        "B3 freshness-aware RAG verifier": {
+          "claims": 5998,
+          "surfaced": 5894,
+          "unlicensed_surfaced": 4111,
+          "unlicensed_surfaced_pct": 68.54,
+          "hard_violations": 1250,
+          "hard_violation_pct": 20.84,
+          "missing_caveat": 2861,
+          "missing_caveat_pct": 47.7,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 0,
+            "G2": 0,
+            "G3": 3,
+            "G4": 365,
+            "G5": 32,
+            "VAL": 6
+          },
+          "precision_of_surfaced_pct": 30.25,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4111,
+          "downgrades": 0,
+          "exact_agreement_pct": 31.46
+        },
+        "B4 B3 + field allowlist": {
+          "claims": 5998,
+          "surfaced": 4678,
+          "unlicensed_surfaced": 2895,
+          "unlicensed_surfaced_pct": 48.27,
+          "hard_violations": 34,
+          "hard_violation_pct": 0.57,
+          "missing_caveat": 2861,
+          "missing_caveat_pct": 47.7,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 3,
+            "G4": 0,
+            "G5": 25,
+            "VAL": 6
+          },
+          "precision_of_surfaced_pct": 38.11,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 2895,
+          "downgrades": 844,
+          "exact_agreement_pct": 37.66
+        },
+        "GCC": {
+          "claims": 5998,
+          "surfaced": 1783,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - caliber": {
+          "claims": 5998,
+          "surfaced": 1852,
+          "unlicensed_surfaced": 78,
+          "unlicensed_surfaced_pct": 1.3,
+          "hard_violations": 78,
+          "hard_violation_pct": 1.3,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 78,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 95.79,
+          "safe_retention_pct": 99.81,
+          "licensed_surface_recall_pct": 99.5,
+          "upgrades": 78,
+          "downgrades": 9,
+          "exact_agreement_pct": 98.55
+        },
+        "GCC - grain": {
+          "claims": 5998,
+          "surfaced": 1786,
+          "unlicensed_surfaced": 3,
+          "unlicensed_surfaced_pct": 0.05,
+          "hard_violations": 3,
+          "hard_violation_pct": 0.05,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 3,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 99.83,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.95
+        },
+        "GCC - policy": {
+          "claims": 5998,
+          "surfaced": 2992,
+          "unlicensed_surfaced": 1209,
+          "unlicensed_surfaced_pct": 20.16,
+          "hard_violations": 1209,
+          "hard_violation_pct": 20.16,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 365,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 59.59,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 1209,
+          "downgrades": 0,
+          "exact_agreement_pct": 79.84
+        },
+        "GCC - lineage": {
+          "claims": 5998,
+          "surfaced": 1783,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 31,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.48
+        }
+      }
+    },
+    "glm-5.3__careful": {
+      "model": "glm-5.3",
+      "variant": "careful",
+      "parse": {
+        "responses_ok": 170,
+        "unknown_field": 4,
+        "unparseable_value": 1
+      },
+      "claims": 4748,
+      "claims_per_item": 5.61,
+      "fields": {
+        "price_offer": 756,
+        "ships_from": 824,
+        "dims": 580,
+        "weight": 717,
+        "rank_reason": 573,
+        "local_popularity": 205,
+        "rating": 724,
+        "marketing_claim": 183,
+        "category": 164,
+        "avail_local": 20,
+        "price_product": 2
+      },
+      "licensed_distribution": {
+        "surface": 1460,
+        "caveat": 2282,
+        "degrade": 573,
+        "refuse": 433
+      },
+      "cause_distribution": {
+        "ok": 1460,
+        "needs_caveat": 2282,
+        "internal": 573,
+        "G4": 205,
+        "G1": 183,
+        "G2": 20,
+        "G5": 19,
+        "VAL": 6
+      },
+      "by_field": {
+        "category": {
+          "claims": 164,
+          "licensed": {
+            "caveat": 163,
+            "refuse": 1
+          },
+          "cause": {
+            "needs_caveat": 163,
+            "G5": 1
+          }
+        },
+        "price_offer": {
+          "claims": 756,
+          "licensed": {
+            "surface": 731,
+            "refuse": 25
+          },
+          "cause": {
+            "ok": 731,
+            "G2": 20,
+            "VAL": 5
+          }
+        },
+        "price_product": {
+          "claims": 2,
+          "licensed": {
+            "surface": 2
+          },
+          "cause": {
+            "ok": 2
+          }
+        },
+        "ships_from": {
+          "claims": 824,
+          "licensed": {
+            "caveat": 820,
+            "refuse": 4
+          },
+          "cause": {
+            "needs_caveat": 820,
+            "G5": 3,
+            "VAL": 1
+          }
+        },
+        "avail_local": {
+          "claims": 20,
+          "licensed": {
+            "surface": 20
+          },
+          "cause": {
+            "ok": 20
+          }
+        },
+        "weight": {
+          "claims": 717,
+          "licensed": {
+            "caveat": 711,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 711,
+            "G5": 6
+          }
+        },
+        "dims": {
+          "claims": 580,
+          "licensed": {
+            "caveat": 574,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 574,
+            "G5": 6
+          }
+        },
+        "rating": {
+          "claims": 724,
+          "licensed": {
+            "surface": 707,
+            "refuse": 3,
+            "caveat": 14
+          },
+          "cause": {
+            "ok": 707,
+            "G5": 3,
+            "needs_caveat": 14
+          }
+        },
+        "local_popularity": {
+          "claims": 205,
+          "licensed": {
+            "refuse": 205
+          },
+          "cause": {
+            "G4": 205
+          }
+        },
+        "rank_reason": {
+          "claims": 573,
+          "licensed": {
+            "degrade": 573
+          },
+          "cause": {
+            "internal": 573
+          }
+        },
+        "marketing_claim": {
+          "claims": 183,
+          "licensed": {
+            "refuse": 183
+          },
+          "cause": {
+            "G1": 183
+          }
+        }
+      },
+      "gcc_oracle_disagreements": 0,
+      "text_numbers": 4884,
+      "text_numbers_in_claims": 4879,
+      "text_number_coverage_pct": 99.9,
+      "prompt_tokens": 246867,
+      "completion_tokens": 549176,
+      "median_seconds": 230.2,
+      "methods": {
+        "B0 no gate": {
+          "claims": 4748,
+          "surfaced": 4748,
+          "unlicensed_surfaced": 3288,
+          "unlicensed_surfaced_pct": 69.25,
+          "hard_violations": 1006,
+          "hard_violation_pct": 21.19,
+          "missing_caveat": 2282,
+          "missing_caveat_pct": 48.06,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 573,
+            "G1": 183,
+            "G2": 20,
+            "G3": 0,
+            "G4": 205,
+            "G5": 19,
+            "VAL": 6
+          },
+          "precision_of_surfaced_pct": 30.75,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3288,
+          "downgrades": 0,
+          "exact_agreement_pct": 30.75
+        },
+        "B1 table validation": {
+          "claims": 4748,
+          "surfaced": 4748,
+          "unlicensed_surfaced": 3288,
+          "unlicensed_surfaced_pct": 69.25,
+          "hard_violations": 1006,
+          "hard_violation_pct": 21.19,
+          "missing_caveat": 2282,
+          "missing_caveat_pct": 48.06,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 573,
+            "G1": 183,
+            "G2": 20,
+            "G3": 0,
+            "G4": 205,
+            "G5": 19,
+            "VAL": 6
+          },
+          "precision_of_surfaced_pct": 30.75,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3288,
+          "downgrades": 0,
+          "exact_agreement_pct": 30.75
+        },
+        "B2 post-hoc verifier (oracle)": {
+          "claims": 4748,
+          "surfaced": 4565,
+          "unlicensed_surfaced": 3105,
+          "unlicensed_surfaced_pct": 65.4,
+          "hard_violations": 823,
+          "hard_violation_pct": 17.33,
+          "missing_caveat": 2282,
+          "missing_caveat_pct": 48.06,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 573,
+            "G1": 0,
+            "G2": 20,
+            "G3": 0,
+            "G4": 205,
+            "G5": 19,
+            "VAL": 6
+          },
+          "precision_of_surfaced_pct": 31.98,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3105,
+          "downgrades": 0,
+          "exact_agreement_pct": 34.6
+        },
+        "B3 freshness-aware RAG verifier": {
+          "claims": 4748,
+          "surfaced": 4545,
+          "unlicensed_surfaced": 3085,
+          "unlicensed_surfaced_pct": 64.97,
+          "hard_violations": 803,
+          "hard_violation_pct": 16.91,
+          "missing_caveat": 2282,
+          "missing_caveat_pct": 48.06,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 573,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 205,
+            "G5": 19,
+            "VAL": 6
+          },
+          "precision_of_surfaced_pct": 32.12,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3085,
+          "downgrades": 0,
+          "exact_agreement_pct": 35.03
+        },
+        "B4 B3 + field allowlist": {
+          "claims": 4748,
+          "surfaced": 3767,
+          "unlicensed_surfaced": 2307,
+          "unlicensed_surfaced_pct": 48.59,
+          "hard_violations": 25,
+          "hard_violation_pct": 0.53,
+          "missing_caveat": 2282,
+          "missing_caveat_pct": 48.06,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 19,
+            "VAL": 6
+          },
+          "precision_of_surfaced_pct": 38.76,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 2307,
+          "downgrades": 573,
+          "exact_agreement_pct": 39.34
+        },
+        "GCC": {
+          "claims": 4748,
+          "surfaced": 1460,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - caliber": {
+          "claims": 4748,
+          "surfaced": 1480,
+          "unlicensed_surfaced": 20,
+          "unlicensed_surfaced_pct": 0.42,
+          "hard_violations": 20,
+          "hard_violation_pct": 0.42,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 20,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 98.65,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 20,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.58
+        },
+        "GCC - grain": {
+          "claims": 4748,
+          "surfaced": 1460,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - policy": {
+          "claims": 4748,
+          "surfaced": 2238,
+          "unlicensed_surfaced": 778,
+          "unlicensed_surfaced_pct": 16.39,
+          "hard_violations": 778,
+          "hard_violation_pct": 16.39,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 573,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 205,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 65.24,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 778,
+          "downgrades": 0,
+          "exact_agreement_pct": 83.61
+        },
+        "GCC - lineage": {
+          "claims": 4748,
+          "surfaced": 1460,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 19,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.6
+        }
+      }
+    },
+    "glm-5.3__plain": {
+      "model": "glm-5.3",
+      "variant": "plain",
+      "parse": {
+        "responses_ok": 169,
+        "unparseable_json": 1
+      },
+      "claims": 5622,
+      "claims_per_item": 6.65,
+      "fields": {
+        "price_offer": 860,
+        "ships_from": 852,
+        "rating": 782,
+        "local_popularity": 216,
+        "rank_reason": 604,
+        "weight": 755,
+        "dims": 652,
+        "marketing_claim": 394,
+        "category": 407,
+        "avail_local": 92,
+        "price_product": 8
+      },
+      "licensed_distribution": {
+        "surface": 1620,
+        "caveat": 2663,
+        "refuse": 737,
+        "degrade": 602
+      },
+      "cause_distribution": {
+        "ok": 1620,
+        "needs_caveat": 2663,
+        "G4": 216,
+        "internal": 602,
+        "G2": 78,
+        "G1": 394,
+        "VAL": 12,
+        "G5": 36,
+        "G3": 1
+      },
+      "by_field": {
+        "category": {
+          "claims": 407,
+          "licensed": {
+            "caveat": 402,
+            "refuse": 5
+          },
+          "cause": {
+            "needs_caveat": 402,
+            "G5": 5
+          }
+        },
+        "price_offer": {
+          "claims": 860,
+          "licensed": {
+            "surface": 767,
+            "refuse": 93
+          },
+          "cause": {
+            "ok": 767,
+            "G2": 78,
+            "G5": 6,
+            "VAL": 9
+          }
+        },
+        "price_product": {
+          "claims": 8,
+          "licensed": {
+            "surface": 7,
+            "refuse": 1
+          },
+          "cause": {
+            "ok": 7,
+            "G3": 1
+          }
+        },
+        "ships_from": {
+          "claims": 852,
+          "licensed": {
+            "caveat": 846,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 846,
+            "G5": 6
+          }
+        },
+        "avail_local": {
+          "claims": 92,
+          "licensed": {
+            "surface": 89,
+            "refuse": 3
+          },
+          "cause": {
+            "ok": 89,
+            "VAL": 3
+          }
+        },
+        "weight": {
+          "claims": 755,
+          "licensed": {
+            "caveat": 749,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 749,
+            "G5": 6
+          }
+        },
+        "dims": {
+          "claims": 652,
+          "licensed": {
+            "caveat": 646,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 646,
+            "G5": 6
+          }
+        },
+        "rating": {
+          "claims": 782,
+          "licensed": {
+            "surface": 757,
+            "caveat": 20,
+            "refuse": 5
+          },
+          "cause": {
+            "ok": 757,
+            "needs_caveat": 20,
+            "G5": 5
+          }
+        },
+        "local_popularity": {
+          "claims": 216,
+          "licensed": {
+            "refuse": 216
+          },
+          "cause": {
+            "G4": 216
+          }
+        },
+        "rank_reason": {
+          "claims": 604,
+          "licensed": {
+            "degrade": 602,
+            "refuse": 2
+          },
+          "cause": {
+            "internal": 602,
+            "G5": 2
+          }
+        },
+        "marketing_claim": {
+          "claims": 394,
+          "licensed": {
+            "refuse": 394
+          },
+          "cause": {
+            "G1": 394
+          }
+        }
+      },
+      "gcc_oracle_disagreements": 0,
+      "text_numbers": 5293,
+      "text_numbers_in_claims": 5288,
+      "text_number_coverage_pct": 99.91,
+      "prompt_tokens": 239217,
+      "completion_tokens": 551162,
+      "median_seconds": 130.1,
+      "methods": {
+        "B0 no gate": {
+          "claims": 5622,
+          "surfaced": 5622,
+          "unlicensed_surfaced": 4002,
+          "unlicensed_surfaced_pct": 71.18,
+          "hard_violations": 1339,
+          "hard_violation_pct": 23.82,
+          "missing_caveat": 2663,
+          "missing_caveat_pct": 47.37,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 602,
+            "G1": 394,
+            "G2": 78,
+            "G3": 1,
+            "G4": 216,
+            "G5": 36,
+            "VAL": 12
+          },
+          "precision_of_surfaced_pct": 28.82,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4002,
+          "downgrades": 0,
+          "exact_agreement_pct": 28.82
+        },
+        "B1 table validation": {
+          "claims": 5622,
+          "surfaced": 5622,
+          "unlicensed_surfaced": 4002,
+          "unlicensed_surfaced_pct": 71.18,
+          "hard_violations": 1339,
+          "hard_violation_pct": 23.82,
+          "missing_caveat": 2663,
+          "missing_caveat_pct": 47.37,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 602,
+            "G1": 394,
+            "G2": 78,
+            "G3": 1,
+            "G4": 216,
+            "G5": 36,
+            "VAL": 12
+          },
+          "precision_of_surfaced_pct": 28.82,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4002,
+          "downgrades": 0,
+          "exact_agreement_pct": 28.82
+        },
+        "B2 post-hoc verifier (oracle)": {
+          "claims": 5622,
+          "surfaced": 5225,
+          "unlicensed_surfaced": 3605,
+          "unlicensed_surfaced_pct": 64.12,
+          "hard_violations": 942,
+          "hard_violation_pct": 16.76,
+          "missing_caveat": 2663,
+          "missing_caveat_pct": 47.37,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 602,
+            "G1": 0,
+            "G2": 78,
+            "G3": 1,
+            "G4": 216,
+            "G5": 36,
+            "VAL": 9
+          },
+          "precision_of_surfaced_pct": 31.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3605,
+          "downgrades": 0,
+          "exact_agreement_pct": 35.88
+        },
+        "B3 freshness-aware RAG verifier": {
+          "claims": 5622,
+          "surfaced": 5137,
+          "unlicensed_surfaced": 3517,
+          "unlicensed_surfaced_pct": 62.56,
+          "hard_violations": 854,
+          "hard_violation_pct": 15.19,
+          "missing_caveat": 2663,
+          "missing_caveat_pct": 47.37,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 602,
+            "G1": 0,
+            "G2": 0,
+            "G3": 1,
+            "G4": 216,
+            "G5": 30,
+            "VAL": 5
+          },
+          "precision_of_surfaced_pct": 31.54,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3517,
+          "downgrades": 0,
+          "exact_agreement_pct": 37.44
+        },
+        "B4 B3 + field allowlist": {
+          "claims": 5622,
+          "surfaced": 4317,
+          "unlicensed_surfaced": 2697,
+          "unlicensed_surfaced_pct": 47.97,
+          "hard_violations": 34,
+          "hard_violation_pct": 0.6,
+          "missing_caveat": 2663,
+          "missing_caveat_pct": 47.37,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 1,
+            "G4": 0,
+            "G5": 28,
+            "VAL": 5
+          },
+          "precision_of_surfaced_pct": 37.53,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 2697,
+          "downgrades": 602,
+          "exact_agreement_pct": 41.32
+        },
+        "GCC": {
+          "claims": 5622,
+          "surfaced": 1620,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - caliber": {
+          "claims": 5622,
+          "surfaced": 1697,
+          "unlicensed_surfaced": 78,
+          "unlicensed_surfaced_pct": 1.39,
+          "hard_violations": 78,
+          "hard_violation_pct": 1.39,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 78,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 95.4,
+          "safe_retention_pct": 99.98,
+          "licensed_surface_recall_pct": 99.94,
+          "upgrades": 78,
+          "downgrades": 1,
+          "exact_agreement_pct": 98.59
+        },
+        "GCC - grain": {
+          "claims": 5622,
+          "surfaced": 1624,
+          "unlicensed_surfaced": 4,
+          "unlicensed_surfaced_pct": 0.07,
+          "hard_violations": 4,
+          "hard_violation_pct": 0.07,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 1,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 3
+          },
+          "precision_of_surfaced_pct": 99.75,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.93
+        },
+        "GCC - policy": {
+          "claims": 5622,
+          "surfaced": 2438,
+          "unlicensed_surfaced": 818,
+          "unlicensed_surfaced_pct": 14.55,
+          "hard_violations": 818,
+          "hard_violation_pct": 14.55,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 602,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 216,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 66.45,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 818,
+          "downgrades": 0,
+          "exact_agreement_pct": 85.45
+        },
+        "GCC - lineage": {
+          "claims": 5622,
+          "surfaced": 1620,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 30,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.47
+        }
+      }
+    },
+    "gpt-6-sol__careful": {
+      "model": "gpt-6-sol",
+      "variant": "careful",
+      "parse": {
+        "responses_ok": 170
+      },
+      "claims": 5718,
+      "claims_per_item": 6.73,
+      "fields": {
+        "category": 446,
+        "price_offer": 828,
+        "ships_from": 839,
+        "weight": 850,
+        "dims": 845,
+        "rating": 846,
+        "rank_reason": 817,
+        "local_popularity": 229,
+        "marketing_claim": 18
+      },
+      "licensed_distribution": {
+        "caveat": 2985,
+        "surface": 1576,
+        "degrade": 815,
+        "refuse": 342
+      },
+      "cause_distribution": {
+        "needs_caveat": 2985,
+        "ok": 1576,
+        "internal": 815,
+        "G4": 229,
+        "G2": 64,
+        "G1": 18,
+        "G5": 28,
+        "VAL": 3
+      },
+      "by_field": {
+        "category": {
+          "claims": 446,
+          "licensed": {
+            "caveat": 441,
+            "refuse": 5
+          },
+          "cause": {
+            "needs_caveat": 441,
+            "G5": 5
+          }
+        },
+        "price_offer": {
+          "claims": 828,
+          "licensed": {
+            "surface": 761,
+            "refuse": 67
+          },
+          "cause": {
+            "ok": 761,
+            "G2": 64,
+            "VAL": 3
+          }
+        },
+        "ships_from": {
+          "claims": 839,
+          "licensed": {
+            "caveat": 836,
+            "refuse": 3
+          },
+          "cause": {
+            "needs_caveat": 836,
+            "G5": 3
+          }
+        },
+        "weight": {
+          "claims": 850,
+          "licensed": {
+            "caveat": 844,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 844,
+            "G5": 6
+          }
+        },
+        "dims": {
+          "claims": 845,
+          "licensed": {
+            "caveat": 839,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 839,
+            "G5": 6
+          }
+        },
+        "rating": {
+          "claims": 846,
+          "licensed": {
+            "surface": 815,
+            "caveat": 25,
+            "refuse": 6
+          },
+          "cause": {
+            "ok": 815,
+            "needs_caveat": 25,
+            "G5": 6
+          }
+        },
+        "local_popularity": {
+          "claims": 229,
+          "licensed": {
+            "refuse": 229
+          },
+          "cause": {
+            "G4": 229
+          }
+        },
+        "rank_reason": {
+          "claims": 817,
+          "licensed": {
+            "degrade": 815,
+            "refuse": 2
+          },
+          "cause": {
+            "internal": 815,
+            "G5": 2
+          }
+        },
+        "marketing_claim": {
+          "claims": 18,
+          "licensed": {
+            "refuse": 18
+          },
+          "cause": {
+            "G1": 18
+          }
+        }
+      },
+      "gcc_oracle_disagreements": 0,
+      "text_numbers": 7091,
+      "text_numbers_in_claims": 7081,
+      "text_number_coverage_pct": 99.86,
+      "prompt_tokens": 308409,
+      "completion_tokens": 220149,
+      "median_seconds": 228,
+      "methods": {
+        "B0 no gate": {
+          "claims": 5718,
+          "surfaced": 5718,
+          "unlicensed_surfaced": 4142,
+          "unlicensed_surfaced_pct": 72.44,
+          "hard_violations": 1157,
+          "hard_violation_pct": 20.23,
+          "missing_caveat": 2985,
+          "missing_caveat_pct": 52.2,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 815,
+            "G1": 18,
+            "G2": 64,
+            "G3": 0,
+            "G4": 229,
+            "G5": 28,
+            "VAL": 3
+          },
+          "precision_of_surfaced_pct": 27.56,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4142,
+          "downgrades": 0,
+          "exact_agreement_pct": 27.56
+        },
+        "B1 table validation": {
+          "claims": 5718,
+          "surfaced": 5718,
+          "unlicensed_surfaced": 4142,
+          "unlicensed_surfaced_pct": 72.44,
+          "hard_violations": 1157,
+          "hard_violation_pct": 20.23,
+          "missing_caveat": 2985,
+          "missing_caveat_pct": 52.2,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 815,
+            "G1": 18,
+            "G2": 64,
+            "G3": 0,
+            "G4": 229,
+            "G5": 28,
+            "VAL": 3
+          },
+          "precision_of_surfaced_pct": 27.56,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4142,
+          "downgrades": 0,
+          "exact_agreement_pct": 27.56
+        },
+        "B2 post-hoc verifier (oracle)": {
+          "claims": 5718,
+          "surfaced": 5700,
+          "unlicensed_surfaced": 4124,
+          "unlicensed_surfaced_pct": 72.12,
+          "hard_violations": 1139,
+          "hard_violation_pct": 19.92,
+          "missing_caveat": 2985,
+          "missing_caveat_pct": 52.2,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 815,
+            "G1": 0,
+            "G2": 64,
+            "G3": 0,
+            "G4": 229,
+            "G5": 28,
+            "VAL": 3
+          },
+          "precision_of_surfaced_pct": 27.65,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4124,
+          "downgrades": 0,
+          "exact_agreement_pct": 27.88
+        },
+        "B3 freshness-aware RAG verifier": {
+          "claims": 5718,
+          "surfaced": 5636,
+          "unlicensed_surfaced": 4060,
+          "unlicensed_surfaced_pct": 71.0,
+          "hard_violations": 1075,
+          "hard_violation_pct": 18.8,
+          "missing_caveat": 2985,
+          "missing_caveat_pct": 52.2,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 815,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 229,
+            "G5": 28,
+            "VAL": 3
+          },
+          "precision_of_surfaced_pct": 27.96,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4060,
+          "downgrades": 0,
+          "exact_agreement_pct": 29.0
+        },
+        "B4 B3 + field allowlist": {
+          "claims": 5718,
+          "surfaced": 4590,
+          "unlicensed_surfaced": 3014,
+          "unlicensed_surfaced_pct": 52.71,
+          "hard_violations": 29,
+          "hard_violation_pct": 0.51,
+          "missing_caveat": 2985,
+          "missing_caveat_pct": 52.2,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 26,
+            "VAL": 3
+          },
+          "precision_of_surfaced_pct": 34.34,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3014,
+          "downgrades": 815,
+          "exact_agreement_pct": 33.04
+        },
+        "GCC": {
+          "claims": 5718,
+          "surfaced": 1576,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - caliber": {
+          "claims": 5718,
+          "surfaced": 1640,
+          "unlicensed_surfaced": 64,
+          "unlicensed_surfaced_pct": 1.12,
+          "hard_violations": 64,
+          "hard_violation_pct": 1.12,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 64,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 96.1,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 64,
+          "downgrades": 0,
+          "exact_agreement_pct": 98.88
+        },
+        "GCC - grain": {
+          "claims": 5718,
+          "surfaced": 1576,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - policy": {
+          "claims": 5718,
+          "surfaced": 2620,
+          "unlicensed_surfaced": 1044,
+          "unlicensed_surfaced_pct": 18.26,
+          "hard_violations": 1044,
+          "hard_violation_pct": 18.26,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 815,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 229,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 60.15,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 1044,
+          "downgrades": 0,
+          "exact_agreement_pct": 81.74
+        },
+        "GCC - lineage": {
+          "claims": 5718,
+          "surfaced": 1576,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 28,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.51
+        }
+      }
+    },
+    "gpt-6-sol__plain": {
+      "model": "gpt-6-sol",
+      "variant": "plain",
+      "parse": {
+        "responses_ok": 170
+      },
+      "claims": 6302,
+      "claims_per_item": 7.41,
+      "fields": {
+        "category": 755,
+        "price_offer": 852,
+        "ships_from": 854,
+        "weight": 850,
+        "dims": 850,
+        "rating": 846,
+        "local_popularity": 373,
+        "rank_reason": 849,
+        "marketing_claim": 8,
+        "avail_local": 64,
+        "price_product": 1
+      },
+      "licensed_distribution": {
+        "caveat": 3311,
+        "surface": 1637,
+        "refuse": 510,
+        "degrade": 844
+      },
+      "cause_distribution": {
+        "needs_caveat": 3311,
+        "ok": 1637,
+        "G4": 372,
+        "internal": 844,
+        "G2": 75,
+        "VAL": 13,
+        "G1": 8,
+        "G5": 42
+      },
+      "by_field": {
+        "category": {
+          "claims": 755,
+          "licensed": {
+            "caveat": 750,
+            "refuse": 5
+          },
+          "cause": {
+            "needs_caveat": 750,
+            "G5": 5
+          }
+        },
+        "price_offer": {
+          "claims": 852,
+          "licensed": {
+            "surface": 758,
+            "refuse": 94
+          },
+          "cause": {
+            "ok": 758,
+            "G2": 75,
+            "VAL": 13,
+            "G5": 6
+          }
+        },
+        "price_product": {
+          "claims": 1,
+          "licensed": {
+            "surface": 1
+          },
+          "cause": {
+            "ok": 1
+          }
+        },
+        "ships_from": {
+          "claims": 854,
+          "licensed": {
+            "caveat": 848,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 848,
+            "G5": 6
+          }
+        },
+        "avail_local": {
+          "claims": 64,
+          "licensed": {
+            "surface": 63,
+            "refuse": 1
+          },
+          "cause": {
+            "ok": 63,
+            "G5": 1
+          }
+        },
+        "weight": {
+          "claims": 850,
+          "licensed": {
+            "caveat": 844,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 844,
+            "G5": 6
+          }
+        },
+        "dims": {
+          "claims": 850,
+          "licensed": {
+            "caveat": 844,
+            "refuse": 6
+          },
+          "cause": {
+            "needs_caveat": 844,
+            "G5": 6
+          }
+        },
+        "rating": {
+          "claims": 846,
+          "licensed": {
+            "surface": 815,
+            "caveat": 25,
+            "refuse": 6
+          },
+          "cause": {
+            "ok": 815,
+            "needs_caveat": 25,
+            "G5": 6
+          }
+        },
+        "local_popularity": {
+          "claims": 373,
+          "licensed": {
+            "refuse": 373
+          },
+          "cause": {
+            "G4": 372,
+            "G5": 1
+          }
+        },
+        "rank_reason": {
+          "claims": 849,
+          "licensed": {
+            "degrade": 844,
+            "refuse": 5
+          },
+          "cause": {
+            "internal": 844,
+            "G5": 5
+          }
+        },
+        "marketing_claim": {
+          "claims": 8,
+          "licensed": {
+            "refuse": 8
+          },
+          "cause": {
+            "G1": 8
+          }
+        }
+      },
+      "gcc_oracle_disagreements": 0,
+      "text_numbers": 7121,
+      "text_numbers_in_claims": 7121,
+      "text_number_coverage_pct": 100.0,
+      "prompt_tokens": 293109,
+      "completion_tokens": 207941,
+      "median_seconds": 235.2,
+      "methods": {
+        "B0 no gate": {
+          "claims": 6302,
+          "surfaced": 6302,
+          "unlicensed_surfaced": 4665,
+          "unlicensed_surfaced_pct": 74.02,
+          "hard_violations": 1354,
+          "hard_violation_pct": 21.49,
+          "missing_caveat": 3311,
+          "missing_caveat_pct": 52.54,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 8,
+            "G2": 75,
+            "G3": 0,
+            "G4": 372,
+            "G5": 42,
+            "VAL": 13
+          },
+          "precision_of_surfaced_pct": 25.98,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4665,
+          "downgrades": 0,
+          "exact_agreement_pct": 25.98
+        },
+        "B1 table validation": {
+          "claims": 6302,
+          "surfaced": 6302,
+          "unlicensed_surfaced": 4665,
+          "unlicensed_surfaced_pct": 74.02,
+          "hard_violations": 1354,
+          "hard_violation_pct": 21.49,
+          "missing_caveat": 3311,
+          "missing_caveat_pct": 52.54,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 8,
+            "G2": 75,
+            "G3": 0,
+            "G4": 372,
+            "G5": 42,
+            "VAL": 13
+          },
+          "precision_of_surfaced_pct": 25.98,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4665,
+          "downgrades": 0,
+          "exact_agreement_pct": 25.98
+        },
+        "B2 post-hoc verifier (oracle)": {
+          "claims": 6302,
+          "surfaced": 6294,
+          "unlicensed_surfaced": 4657,
+          "unlicensed_surfaced_pct": 73.9,
+          "hard_violations": 1346,
+          "hard_violation_pct": 21.36,
+          "missing_caveat": 3311,
+          "missing_caveat_pct": 52.54,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 0,
+            "G2": 75,
+            "G3": 0,
+            "G4": 372,
+            "G5": 42,
+            "VAL": 13
+          },
+          "precision_of_surfaced_pct": 26.01,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4657,
+          "downgrades": 0,
+          "exact_agreement_pct": 26.1
+        },
+        "B3 freshness-aware RAG verifier": {
+          "claims": 6302,
+          "surfaced": 6208,
+          "unlicensed_surfaced": 4571,
+          "unlicensed_surfaced_pct": 72.53,
+          "hard_violations": 1260,
+          "hard_violation_pct": 19.99,
+          "missing_caveat": 3311,
+          "missing_caveat_pct": 52.54,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 372,
+            "G5": 35,
+            "VAL": 9
+          },
+          "precision_of_surfaced_pct": 26.37,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 4571,
+          "downgrades": 0,
+          "exact_agreement_pct": 27.47
+        },
+        "B4 B3 + field allowlist": {
+          "claims": 6302,
+          "surfaced": 4986,
+          "unlicensed_surfaced": 3349,
+          "unlicensed_surfaced_pct": 53.14,
+          "hard_violations": 38,
+          "hard_violation_pct": 0.6,
+          "missing_caveat": 3311,
+          "missing_caveat_pct": 52.54,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 29,
+            "VAL": 9
+          },
+          "precision_of_surfaced_pct": 32.83,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 3349,
+          "downgrades": 844,
+          "exact_agreement_pct": 33.47
+        },
+        "GCC": {
+          "claims": 6302,
+          "surfaced": 1637,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - caliber": {
+          "claims": 6302,
+          "surfaced": 1712,
+          "unlicensed_surfaced": 75,
+          "unlicensed_surfaced_pct": 1.19,
+          "hard_violations": 75,
+          "hard_violation_pct": 1.19,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 75,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 95.62,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 75,
+          "downgrades": 0,
+          "exact_agreement_pct": 98.81
+        },
+        "GCC - grain": {
+          "claims": 6302,
+          "surfaced": 1637,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 0,
+          "downgrades": 0,
+          "exact_agreement_pct": 100.0
+        },
+        "GCC - policy": {
+          "claims": 6302,
+          "surfaced": 2853,
+          "unlicensed_surfaced": 1216,
+          "unlicensed_surfaced_pct": 19.3,
+          "hard_violations": 1216,
+          "hard_violation_pct": 19.3,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 844,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 372,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 57.38,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 1216,
+          "downgrades": 0,
+          "exact_agreement_pct": 80.7
+        },
+        "GCC - lineage": {
+          "claims": 6302,
+          "surfaced": 1637,
+          "unlicensed_surfaced": 0,
+          "unlicensed_surfaced_pct": 0.0,
+          "hard_violations": 0,
+          "hard_violation_pct": 0.0,
+          "missing_caveat": 0,
+          "missing_caveat_pct": 0.0,
+          "hard_by_cause": {
+            "needs_caveat": 0,
+            "internal": 0,
+            "G1": 0,
+            "G2": 0,
+            "G3": 0,
+            "G4": 0,
+            "G5": 0,
+            "VAL": 0
+          },
+          "precision_of_surfaced_pct": 100.0,
+          "safe_retention_pct": 100.0,
+          "licensed_surface_recall_pct": 100.0,
+          "upgrades": 34,
+          "downgrades": 0,
+          "exact_agreement_pct": 99.46
+        }
+      }
+    }
+  },
+  "excluded": {}
+}
