@@ -1,0 +1,47 @@
+{
+  "matrix": {
+    "P0_clean": {
+      "G1_groundedness": false,
+      "G2_price_freshness": false,
+      "G3_compat_groundable": false,
+      "G4_sensitivity_guard": false,
+      "G5_funnel_monotonic": false
+    },
+    "P1_remove_binding": {
+      "G1_groundedness": true,
+      "G2_price_freshness": false,
+      "G3_compat_groundable": false,
+      "G4_sensitivity_guard": false,
+      "G5_funnel_monotonic": false
+    },
+    "P2_stale_price": {
+      "G1_groundedness": false,
+      "G2_price_freshness": true,
+      "G3_compat_groundable": false,
+      "G4_sensitivity_guard": false,
+      "G5_funnel_monotonic": false
+    },
+    "P3_compat_no_evidence": {
+      "G1_groundedness": false,
+      "G2_price_freshness": false,
+      "G3_compat_groundable": true,
+      "G4_sensitivity_guard": false,
+      "G5_funnel_monotonic": false
+    },
+    "P4_sensitive_leak": {
+      "G1_groundedness": false,
+      "G2_price_freshness": false,
+      "G3_compat_groundable": false,
+      "G4_sensitivity_guard": true,
+      "G5_funnel_monotonic": false
+    },
+    "P5_break_funnel": {
+      "G1_groundedness": false,
+      "G2_price_freshness": false,
+      "G3_compat_groundable": false,
+      "G4_sensitivity_guard": false,
+      "G5_funnel_monotonic": true
+    }
+  },
+  "specific_no_crossfire": true
+}

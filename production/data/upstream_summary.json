@@ -1,0 +1,24 @@
+{
+  "funnel": {
+    "snapshots": 1130,
+    "monotonic_ok": 1130,
+    "monotonic_violation": 0,
+    "parse_fail": 0,
+    "empty_ranked_set": 0
+  },
+  "product_base": {
+    "products": 27,
+    "missing_price_validated_at": 0,
+    "missing_effective_price": 0
+  },
+  "cart_validation": {
+    "cart_items": 39,
+    "missing_price_validated_at": 0,
+    "missing_inventory_validated_at": 0,
+    "missing_serviceability_validated_at": 0
+  },
+  "ranking_audit": {
+    "snapshots_with_items": 1130,
+    "rank_score_consistent": 844
+  }
+}

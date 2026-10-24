@@ -1,0 +1,23 @@
+{
+  "versioned_provenance_replay": {
+    "snapshots": 1130,
+    "pin_complete": 1130,
+    "typed_equal_replay": true,
+    "replay_runs_identical_pct": 100.0,
+    "distinct_versions": {
+      "strategy_version": 1,
+      "data_version": 1,
+      "model_version": 1,
+      "decision_state_hash": 287,
+      "fact_snapshot_id": 15
+    },
+    "note": "Same-source replay is typed-equal on a second run, so the replay function is deterministic. The release contains a single (strategy, data, model) version triple, so cross-version discrimination requires multi-version snapshots (future work)."
+  },
+  "ranking_auditability_boundary": {
+    "snapshots_with_items": 1130,
+    "rank_score_consistent": 844,
+    "pct": 74.69,
+    "note": "Within a snapshot, score is non-increasing in ascending rank, so ranking order is reproducible from the recorded score (ranking auditability)."
+  },
+  "scope_note": "Replay is typed disposition replay over a fixed released claim set. It is not model-text determinism and not a full ranking re-execution claim."
+}

@@ -1,0 +1,4 @@
+olist-data/
+__pycache__/
+*.db
+production/results/reproduced_results.json

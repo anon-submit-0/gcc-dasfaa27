@@ -1,0 +1,722 @@
+[
+  {
+    "h": 0.0,
+    "seed": 11,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 69.56,
+        "hard_violation_pct": 12.43,
+        "missing_caveat_pct": 57.13,
+        "precision_of_surfaced_pct": 30.44,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 69.56,
+        "hard_violation_pct": 12.43,
+        "missing_caveat_pct": 57.13,
+        "precision_of_surfaced_pct": 30.44,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 67.53,
+        "hard_violation_pct": 10.4,
+        "missing_caveat_pct": 57.13,
+        "precision_of_surfaced_pct": 31.07,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 66.04,
+        "hard_violation_pct": 8.91,
+        "missing_caveat_pct": 57.13,
+        "precision_of_surfaced_pct": 31.55,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176208
+  },
+  {
+    "h": 0.0,
+    "seed": 12,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 69.68,
+        "hard_violation_pct": 12.7,
+        "missing_caveat_pct": 56.98,
+        "precision_of_surfaced_pct": 30.32,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 69.68,
+        "hard_violation_pct": 12.7,
+        "missing_caveat_pct": 56.98,
+        "precision_of_surfaced_pct": 30.32,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 67.63,
+        "hard_violation_pct": 10.64,
+        "missing_caveat_pct": 56.98,
+        "precision_of_surfaced_pct": 30.96,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 66.09,
+        "hard_violation_pct": 9.11,
+        "missing_caveat_pct": 56.98,
+        "precision_of_surfaced_pct": 31.45,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176365
+  },
+  {
+    "h": 0.0,
+    "seed": 13,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 69.68,
+        "hard_violation_pct": 12.56,
+        "missing_caveat_pct": 57.13,
+        "precision_of_surfaced_pct": 30.32,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 69.68,
+        "hard_violation_pct": 12.56,
+        "missing_caveat_pct": 57.13,
+        "precision_of_surfaced_pct": 30.32,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 67.6,
+        "hard_violation_pct": 10.48,
+        "missing_caveat_pct": 57.13,
+        "precision_of_surfaced_pct": 30.96,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 66.04,
+        "hard_violation_pct": 8.91,
+        "missing_caveat_pct": 57.13,
+        "precision_of_surfaced_pct": 31.47,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176173
+  },
+  {
+    "h": 0.05,
+    "seed": 11,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 70.87,
+        "hard_violation_pct": 16.76,
+        "missing_caveat_pct": 54.11,
+        "precision_of_surfaced_pct": 29.13,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 70.87,
+        "hard_violation_pct": 16.76,
+        "missing_caveat_pct": 54.11,
+        "precision_of_surfaced_pct": 29.13,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 64.62,
+        "hard_violation_pct": 10.52,
+        "missing_caveat_pct": 54.11,
+        "precision_of_surfaced_pct": 31.07,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 63.14,
+        "hard_violation_pct": 9.03,
+        "missing_caveat_pct": 54.11,
+        "precision_of_surfaced_pct": 31.57,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176429
+  },
+  {
+    "h": 0.05,
+    "seed": 12,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 70.74,
+        "hard_violation_pct": 16.58,
+        "missing_caveat_pct": 54.16,
+        "precision_of_surfaced_pct": 29.26,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 70.74,
+        "hard_violation_pct": 16.58,
+        "missing_caveat_pct": 54.16,
+        "precision_of_surfaced_pct": 29.26,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 64.38,
+        "hard_violation_pct": 10.21,
+        "missing_caveat_pct": 54.16,
+        "precision_of_surfaced_pct": 31.25,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 62.96,
+        "hard_violation_pct": 8.8,
+        "missing_caveat_pct": 54.16,
+        "precision_of_surfaced_pct": 31.73,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176226
+  },
+  {
+    "h": 0.05,
+    "seed": 13,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 70.93,
+        "hard_violation_pct": 16.89,
+        "missing_caveat_pct": 54.04,
+        "precision_of_surfaced_pct": 29.07,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 70.93,
+        "hard_violation_pct": 16.89,
+        "missing_caveat_pct": 54.04,
+        "precision_of_surfaced_pct": 29.07,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 64.58,
+        "hard_violation_pct": 10.54,
+        "missing_caveat_pct": 54.04,
+        "precision_of_surfaced_pct": 31.04,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 63.1,
+        "hard_violation_pct": 9.06,
+        "missing_caveat_pct": 54.04,
+        "precision_of_surfaced_pct": 31.54,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176534
+  },
+  {
+    "h": 0.1,
+    "seed": 11,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 72.19,
+        "hard_violation_pct": 20.88,
+        "missing_caveat_pct": 51.31,
+        "precision_of_surfaced_pct": 27.81,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 72.19,
+        "hard_violation_pct": 20.88,
+        "missing_caveat_pct": 51.31,
+        "precision_of_surfaced_pct": 27.81,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 61.53,
+        "hard_violation_pct": 10.23,
+        "missing_caveat_pct": 51.31,
+        "precision_of_surfaced_pct": 31.13,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 60.2,
+        "hard_violation_pct": 8.89,
+        "missing_caveat_pct": 51.31,
+        "precision_of_surfaced_pct": 31.6,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176089
+  },
+  {
+    "h": 0.1,
+    "seed": 12,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 72.13,
+        "hard_violation_pct": 20.9,
+        "missing_caveat_pct": 51.24,
+        "precision_of_surfaced_pct": 27.87,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 72.13,
+        "hard_violation_pct": 20.9,
+        "missing_caveat_pct": 51.24,
+        "precision_of_surfaced_pct": 27.87,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 61.46,
+        "hard_violation_pct": 10.22,
+        "missing_caveat_pct": 51.24,
+        "precision_of_surfaced_pct": 31.2,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 60.15,
+        "hard_violation_pct": 8.91,
+        "missing_caveat_pct": 51.24,
+        "precision_of_surfaced_pct": 31.66,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176221
+  },
+  {
+    "h": 0.1,
+    "seed": 13,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 72.17,
+        "hard_violation_pct": 20.88,
+        "missing_caveat_pct": 51.3,
+        "precision_of_surfaced_pct": 27.83,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 72.17,
+        "hard_violation_pct": 20.88,
+        "missing_caveat_pct": 51.3,
+        "precision_of_surfaced_pct": 27.83,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 61.63,
+        "hard_violation_pct": 10.33,
+        "missing_caveat_pct": 51.3,
+        "precision_of_surfaced_pct": 31.11,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 60.23,
+        "hard_violation_pct": 8.93,
+        "missing_caveat_pct": 51.3,
+        "precision_of_surfaced_pct": 31.6,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176371
+  },
+  {
+    "h": 0.2,
+    "seed": 11,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 74.75,
+        "hard_violation_pct": 29.21,
+        "missing_caveat_pct": 45.54,
+        "precision_of_surfaced_pct": 25.25,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 74.75,
+        "hard_violation_pct": 29.21,
+        "missing_caveat_pct": 45.54,
+        "precision_of_surfaced_pct": 25.25,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 55.56,
+        "hard_violation_pct": 10.02,
+        "missing_caveat_pct": 45.54,
+        "precision_of_surfaced_pct": 31.25,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 54.29,
+        "hard_violation_pct": 8.75,
+        "missing_caveat_pct": 45.54,
+        "precision_of_surfaced_pct": 31.75,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176273
+  },
+  {
+    "h": 0.2,
+    "seed": 12,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 74.75,
+        "hard_violation_pct": 29.23,
+        "missing_caveat_pct": 45.53,
+        "precision_of_surfaced_pct": 25.25,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 74.75,
+        "hard_violation_pct": 29.23,
+        "missing_caveat_pct": 45.53,
+        "precision_of_surfaced_pct": 25.25,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 55.52,
+        "hard_violation_pct": 9.99,
+        "missing_caveat_pct": 45.53,
+        "precision_of_surfaced_pct": 31.26,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 54.25,
+        "hard_violation_pct": 8.72,
+        "missing_caveat_pct": 45.53,
+        "precision_of_surfaced_pct": 31.76,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176343
+  },
+  {
+    "h": 0.2,
+    "seed": 13,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 74.79,
+        "hard_violation_pct": 29.16,
+        "missing_caveat_pct": 45.63,
+        "precision_of_surfaced_pct": 25.21,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 74.79,
+        "hard_violation_pct": 29.16,
+        "missing_caveat_pct": 45.63,
+        "precision_of_surfaced_pct": 25.21,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 55.61,
+        "hard_violation_pct": 9.98,
+        "missing_caveat_pct": 45.63,
+        "precision_of_surfaced_pct": 31.19,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 54.35,
+        "hard_violation_pct": 8.72,
+        "missing_caveat_pct": 45.63,
+        "precision_of_surfaced_pct": 31.69,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 175970
+  },
+  {
+    "h": 0.3,
+    "seed": 11,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 77.55,
+        "hard_violation_pct": 37.58,
+        "missing_caveat_pct": 39.97,
+        "precision_of_surfaced_pct": 22.45,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 77.55,
+        "hard_violation_pct": 37.58,
+        "missing_caveat_pct": 39.97,
+        "precision_of_surfaced_pct": 22.45,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 49.86,
+        "hard_violation_pct": 9.89,
+        "missing_caveat_pct": 39.97,
+        "precision_of_surfaced_pct": 31.05,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 48.73,
+        "hard_violation_pct": 8.76,
+        "missing_caveat_pct": 39.97,
+        "precision_of_surfaced_pct": 31.54,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 175971
+  },
+  {
+    "h": 0.3,
+    "seed": 12,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 77.44,
+        "hard_violation_pct": 37.6,
+        "missing_caveat_pct": 39.84,
+        "precision_of_surfaced_pct": 22.56,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 77.44,
+        "hard_violation_pct": 37.6,
+        "missing_caveat_pct": 39.84,
+        "precision_of_surfaced_pct": 22.56,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 49.71,
+        "hard_violation_pct": 9.86,
+        "missing_caveat_pct": 39.84,
+        "precision_of_surfaced_pct": 31.22,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 48.54,
+        "hard_violation_pct": 8.7,
+        "missing_caveat_pct": 39.84,
+        "precision_of_surfaced_pct": 31.73,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 175942
+  },
+  {
+    "h": 0.3,
+    "seed": 13,
+    "methods": {
+      "B0 no gate": {
+        "unlicensed_surfaced_pct": 77.27,
+        "hard_violation_pct": 37.64,
+        "missing_caveat_pct": 39.63,
+        "precision_of_surfaced_pct": 22.73,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B1 table validation": {
+        "unlicensed_surfaced_pct": 77.27,
+        "hard_violation_pct": 37.64,
+        "missing_caveat_pct": 39.63,
+        "precision_of_surfaced_pct": 22.73,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B2 post-hoc verifier (oracle)": {
+        "unlicensed_surfaced_pct": 49.7,
+        "hard_violation_pct": 10.07,
+        "missing_caveat_pct": 39.63,
+        "precision_of_surfaced_pct": 31.39,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "B3 freshness-aware RAG verifier": {
+        "unlicensed_surfaced_pct": 48.54,
+        "hard_violation_pct": 8.92,
+        "missing_caveat_pct": 39.63,
+        "precision_of_surfaced_pct": 31.89,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      },
+      "GCC": {
+        "unlicensed_surfaced_pct": 0.0,
+        "hard_violation_pct": 0.0,
+        "missing_caveat_pct": 0.0,
+        "precision_of_surfaced_pct": 100.0,
+        "safe_retention_pct": 100.0,
+        "licensed_surface_recall_pct": 100.0
+      }
+    },
+    "gcc_oracle_disagreements": 0,
+    "claims": 176583
+  }
+]

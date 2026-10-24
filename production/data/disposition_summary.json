@@ -1,0 +1,108 @@
+{
+  "total_surfaced_claims": 121760,
+  "pre_gate_empty_provenance": {
+    "count": 121760,
+    "pct": 100.0
+  },
+  "pre_gate_null_recorded_at": {
+    "count": 121760,
+    "pct": 100.0
+  },
+  "post_gate_dispositions": {
+    "grounded": 24972,
+    "caveat": 79770,
+    "degrade_derived": 11460,
+    "degrade_unmapped": 5558
+  },
+  "evidence_tiers": {
+    "identity_unique": 12486,
+    "clock_backed": 12486,
+    "governed_unclocked_spec": 79770,
+    "internal_context": 11460,
+    "unmapped_or_media": 5558
+  },
+  "binding_or_caveat_coverage": {
+    "count": 104742,
+    "pct": 86.02
+  },
+  "degraded_non_asserted_context": {
+    "count": 17018,
+    "pct": 13.98
+  },
+  "refuse_observed": {
+    "count": 0,
+    "pct": 0.0
+  },
+  "ungrounded_external_claims_admitted": {
+    "count": 0,
+    "pct": 0.0
+  },
+  "external_truth_coverage": {
+    "count": 97010,
+    "pct": 79.67
+  },
+  "spec_external_truth_coverage": {
+    "count": 69075,
+    "denominator": 79770,
+    "pct": 86.59
+  },
+  "operating_points": [
+    {
+      "name": "OP1_clock_backed",
+      "surfaced_tiers": [
+        "clock_backed"
+      ],
+      "coverage_count": 12486,
+      "coverage_pct": 10.25,
+      "emitted_lacking_per_fact_clock": 0,
+      "ungrounded_external_emitted": 0
+    },
+    {
+      "name": "OP2_governed_populated",
+      "surfaced_tiers": [
+        "clock_backed",
+        "identity_unique"
+      ],
+      "coverage_count": 24972,
+      "coverage_pct": 20.51,
+      "emitted_lacking_per_fact_clock": 12486,
+      "ungrounded_external_emitted": 0
+    },
+    {
+      "name": "OP3_governed_or_caveated",
+      "surfaced_tiers": [
+        "clock_backed",
+        "identity_unique",
+        "governed_unclocked_spec"
+      ],
+      "coverage_count": 104742,
+      "coverage_pct": 86.02,
+      "emitted_lacking_per_fact_clock": 92256,
+      "ungrounded_external_emitted": 0
+    },
+    {
+      "name": "OP4_full_with_degrade_non_asserted",
+      "surfaced_tiers": [
+        "clock_backed",
+        "identity_unique",
+        "governed_unclocked_spec",
+        "internal_context",
+        "unmapped_or_media"
+      ],
+      "coverage_count": 121760,
+      "coverage_pct": 100.0,
+      "emitted_lacking_per_fact_clock": 109274,
+      "ungrounded_external_emitted": 0
+    },
+    {
+      "name": "as_shipped_no_gate",
+      "surfaced_tiers": [
+        "all_unbound_surface_claims"
+      ],
+      "coverage_count": 121760,
+      "coverage_pct": 100.0,
+      "emitted_lacking_per_fact_clock": null,
+      "ungrounded_external_emitted": 121760
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "cause_by_injection": {
+    "G1|lineage": 16,
+    "G1|unregistered": 1298,
+    "G2|mixup": 1,
+    "G2|none": 2200,
+    "G3|none": 1043,
+    "G4|none": 8508,
+    "G5|lineage": 1604,
+    "VAL|mixup": 2278,
+    "VAL|perturb": 7600,
+    "internal|none": 5055,
+    "needs_caveat|none": 95490,
+    "ok|none": 51482
+  },
+  "offer_rows_per_day_min_2018": 73,
+  "days_without_offer_rows_2018": [],
+  "b2_surviving_value_errors_by_field": {
+    "ships_from|mixup": 21,
+    "price_offer|mixup": 10,
+    "ships_from|perturb": 3,
+    "price_product|mixup": 4,
+    "price_offer|perturb": 2
+  },
+  "price_product_claims": 12794,
+  "price_product_G3": 1043,
+  "price_product_G3_uninjected": 1043,
+  "G2_by_field": {
+    "price_product": 968,
+    "price_offer": 928,
+    "avail_local": 305
+  },
+  "G2_uninjected": 2200,
+  "G4_uninjected": 8508,
+  "lineage_items_outcomes_GCC-lineage": {
+    "refuse->caveat": 1212,
+    "refuse->refuse": 352,
+    "refuse->degrade": 45,
+    "refuse->surface": 11
+  },
+  "gcc_caliber_downgrades_by_field": {
+    "price_product": 1199
+  }
+}

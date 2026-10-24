@@ -1,0 +1,81 @@
+{
+  "platform": {
+    "python": "3.13.17",
+    "sqlite": "3.45.1",
+    "cpus": 2
+  },
+  "rows": [
+    {
+      "requests_per_week": 75,
+      "responses": 2550,
+      "claims": 88123,
+      "claims_per_response_mean": 34.6,
+      "response_ms_p50": 6.816,
+      "response_ms_p95": 10.942,
+      "response_ms_p99": 13.793,
+      "response_ms_mean": 7.043,
+      "claim_us_p50": 199.3,
+      "claim_us_p95": 310.7,
+      "throughput_claims_per_s": 4903,
+      "total_s": 17.97,
+      "ledger_bytes": 16142336,
+      "ledger_bytes_per_claim": 183.2,
+      "contract_table_bytes": 16384,
+      "db_file_bytes": 706793472
+    },
+    {
+      "requests_per_week": 150,
+      "responses": 5100,
+      "claims": 176106,
+      "claims_per_response_mean": 34.5,
+      "response_ms_p50": 6.867,
+      "response_ms_p95": 10.887,
+      "response_ms_p99": 12.962,
+      "response_ms_mean": 7.029,
+      "claim_us_p50": 199.6,
+      "claim_us_p95": 311.1,
+      "throughput_claims_per_s": 4910,
+      "total_s": 35.87,
+      "ledger_bytes": 32296960,
+      "ledger_bytes_per_claim": 183.4,
+      "contract_table_bytes": 16384,
+      "db_file_bytes": 1372237824
+    },
+    {
+      "requests_per_week": 300,
+      "responses": 10200,
+      "claims": 351835,
+      "claims_per_response_mean": 34.5,
+      "response_ms_p50": 6.929,
+      "response_ms_p95": 10.904,
+      "response_ms_p99": 13.359,
+      "response_ms_mean": 7.129,
+      "claim_us_p50": 200.4,
+      "claim_us_p95": 310.5,
+      "throughput_claims_per_s": 4835,
+      "total_s": 72.76,
+      "ledger_bytes": 64589824,
+      "ledger_bytes_per_claim": 183.6,
+      "contract_table_bytes": 16384,
+      "db_file_bytes": 2688544768
+    },
+    {
+      "requests_per_week": 600,
+      "responses": 20400,
+      "claims": 705308,
+      "claims_per_response_mean": 34.6,
+      "response_ms_p50": 7.307,
+      "response_ms_p95": 11.586,
+      "response_ms_p99": 14.21,
+      "response_ms_mean": 7.517,
+      "claim_us_p50": 211.2,
+      "claim_us_p95": 331.9,
+      "throughput_claims_per_s": 4597,
+      "total_s": 153.43,
+      "ledger_bytes": 129564672,
+      "ledger_bytes_per_claim": 183.7,
+      "contract_table_bytes": 16384,
+      "db_file_bytes": 5366226944
+    }
+  ]
+}

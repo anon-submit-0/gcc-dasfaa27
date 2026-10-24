@@ -1,0 +1,10 @@
+{
+  "cpus": 2,
+  "mem_gb": 7.8,
+  "python": "3.13.17",
+  "production_replay": {
+    "wall_s": 0.29,
+    "max_rss_mb": 11.4,
+    "note": "python3 production/reproduce.py over 121,760 claim rows, measured on the same VM"
+  }
+}
